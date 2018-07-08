@@ -1,11 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sinatra MVC</title>
-  </head>
+<!Doctype HTML>
+<html> 
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Sarala" rel="stylesheet">
+</head>
+<header>
+  <title>Körfu</title>
+</header>
 
-  <body>
-    <h1>Index</h1>
-    <p> I love programming </p>
-  </body>
+<body>
+<h1> Körfu </h1>
+  <nav class="menu">
+  <ol>
+   <li class="menu-item"><a href='/'>Home</a></li>
+   <li class="menu-item"><a href='index.erb'>Start Shopping</a></li>
+   <li class="menu-item"><a href='tj.erb'>Contact</a></li>
+  </ol>
+  </nav>
+
+<br/>
+<form method="POST" action='/page1.erb'>
+  <h2> What are you shopping for today? </h2>
+  <input type="checkbox" name="veggies"> veggies<br>
+  <input type="checkbox" name="fruits"> fruits<br>
+  <input type="checkbox" name="meat"> meat<br>
+  <input type="checkbox" name="dairy"> dairy<br>
+  <a href ='page1.erb' target=“_self”> 
+<button type = “button”>Submit</button> 
+</a>
+</form>
+</body>
+
 </html>
